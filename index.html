@@ -1,6 +1,8 @@
 <html>
 
-<head></head>
+<head>
+    <meta charset="UTF-8">
+</head>
 
 <body>
     <div class="Header">
@@ -10,14 +12,23 @@
     <div class="link-creator">
         <div class="user-input">
             <a>Link to Github Repo Here</a>
-            <input type="text" id="repo" name="repo" placeholder="github.com/your-repo-here">
+            <input type="text" id="repo" name="repo" placeholder="github.com/your-repo-here" onchange="update_url()">
             <a>Git ref (branch, tag, or commit)</a>
-            <input type="text" id="repo" name="repo" placeholder="UNDER CONSTRUCTION">
+            <input type="text" id="ref" name="ref" placeholder="UNDER CONSTRUCTION">
             <a>Path to a notebook file (optional)</a>
-            <input type="text" id="repo" name="repo" placeholder="UNDER CONSTRUCTION">
+            <input type="text" id="file" name="file" placeholder="UNDER CONSTRUCTION">
         </div>
         <div class="user-output">
             <a>Copy the URL below and share your DataHub Repo with others:</a>
+            <p id="dh-url">http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=</p>
+            <script>
+                function update_url() {
+                    console.log("im trying")
+                    var repo_url = document.getElementById('repo').value;
+                    console.log(repo_url);
+                    document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url;
+                }
+            </script>
         </div>
     </div>
 </body>
