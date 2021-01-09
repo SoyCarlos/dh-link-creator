@@ -4,7 +4,7 @@
 
 Bear icon from Mozilla, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
 
-[![DataHub](https://svgshare.com/i/Sw5.svg)](https://data.berkeley.edu/consulting/)
+[![DataHub](https://svgshare.com/i/Sys.svg)](https://data.berkeley.edu/consulting/)
 
 #To-Do:
 1. Add subpath option
