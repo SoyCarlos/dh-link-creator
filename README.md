@@ -3,7 +3,7 @@
 # WHAT?
 dh-link-creator is a simple, single-page app completely built with HTML, CSS, and JS to create shareable links that will make a copy of an individual's repo to the user's UC Berkeley DataHub instance.
 
-Example Link/Badge: 
+Example Link/Badge (Will open UC Berkeley DataHub in this tab): 
 
 [![DataHub](https://i.ibb.co/s5V7XbX/badge-logo.png)](http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=https://github.com/SoyCarlos/Intro-To-Making-Data&subpath=Intro-to-Making.ipynb)
 
