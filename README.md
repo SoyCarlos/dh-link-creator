@@ -10,7 +10,8 @@ SVG Link: https://svgshare.com/i/Sys.svg
 
 
 #To-Do:
-1. Add subpath option
-2. Add markdown to include badge logo
-3. improve badge logo
-4. make site pretty
+1. Make datahub link ✅
+2. Add subpath option ✅
+3. Add markdown to include badge logo ✅
+4. improve badge logo
+5. make site pretty
