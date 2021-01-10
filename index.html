@@ -13,20 +13,41 @@
         <div class="user-input">
             <a>Link to Github Repo Here</a>
             <input type="text" id="repo" name="repo" placeholder="github.com/your-repo-here" onchange="update_url()">
-            <a>Git ref (branch, tag, or commit)</a>
-            <input type="text" id="ref" name="ref" placeholder="UNDER CONSTRUCTION">
-            <a>Path to a notebook file (optional)</a>
-            <input type="text" id="file" name="file" placeholder="UNDER CONSTRUCTION">
+            <a>Subpath to a notebook file (optional)</a>
+            <input type="text" id="file" name="file" placeholder="path/to/notebook.ipynb" onchange="add_subpath()">
         </div>
-        <div class="user-output">
+        <div class="user-output1">
             <a>Copy the URL below and share your DataHub Repo with others:</a>
-            <p id="dh-url">http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=</p>
+            <p id="dh-url">Fill in the fields to see your DataHub URL here.</p>
             <script>
                 function update_url() {
-                    console.log("im trying")
                     var repo_url = document.getElementById('repo').value;
-                    console.log(repo_url);
-                    document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url;
+                    if (repo_url == "") {
+                        document.getElementById("dh-url").innerHTML = "Fill in the fields to see your DataHub URL here.";
+                    }
+                    else {
+                        document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url;
+                        markdown_repo_only(document.getElementById("dh-url").innerHTML);
+                    }
+                }
+            </script>
+            <script>
+                function add_subpath() {
+                    var repo_url = document.getElementById('repo').value;
+                    var file_path = document.getElementById('file').value;
+                    if (repo_url != "" && file_path != "") {
+                        document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url + "&subpath=" + file_path;
+                    }
+                }
+            </script>
+        </div>
+        <div class="user-output2">
+            <a>Copy the text below, then paste it into your README to show a DataHub badge: </a>
+            <img src="badge_logo.svg" width="10%">
+            <p id="markdown">Fill in the fields to see the markdown badge snippet.</p>
+            <script>
+                function markdown_repo_only(url) {
+                    document.getElementById("markdown").innerHTML = "[![DataHub](https://i.ibb.co/s5V7XbX/badge-logo.png)](" + url + ")";
                 }
             </script>
         </div>
