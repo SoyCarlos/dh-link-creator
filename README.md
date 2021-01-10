@@ -31,7 +31,7 @@ The subpath is optional. Adding the subpath will automatically open the notebook
 By the nature of DataHub, clicking the link will not update a repo that has had any changes and the repo cannot be copied into a user's DataHub directory if they have another folder already by the same name. To be able to copy over the repo the user will have to rename or remove the folder that shares the name with the repo. DataHub links should only be shared once the repo is finalized and ready to share. 
 
 
-Submit an issue if you find any bugs or requests, or tweet me.
+Submit an issue if you find any bugs or have any requests, or tweet me.
 
 
 # To-Do:
