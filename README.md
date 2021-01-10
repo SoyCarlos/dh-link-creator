@@ -1,14 +1,37 @@
 # dh-link-creator
- - Github io page that makes Datahub link for repo
-	- Should also use launch Datahub image similar style to launch binder image
 
-Bear icon from Mozilla, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+# WHAT?
+dh-link-creator is a simple single-page app completely built with HTML, CSS, and JS to create shareable links that will make a copy of an individual's repo to the user's UC Berkeley DataHub instance.
 
+
+# WHO & WHY?
+I am Carlos Eduardo Ortega, current senior at UC Berkeley entering my final semester. I am also a a Peer Consultant under CDSS DSUS. We host a good amount of workshops, and as such, end up making a good amount of DataHub links. This will hopefully make it a bit easier and not require us to remember the exact format.
+
+
+# HOW?
 [![DataHub](https://i.ibb.co/s5V7XbX/badge-logo.png)](https://data.berkeley.edu/consulting/)
+There are two user input text fields here:
+1. Link to Github Repo
+	- Ex: https://github.com/ds-peer-consulting/fa20-intro-to-python-library-workshop 
 
-#To-Do:
-1. Make datahub link ✅
-2. Add subpath option ✅
-3. Add markdown to include badge logo ✅
-4. improve badge logo 💤
-5. make site pretty 💤
+2. Subpath to Notebook File (Optional)
+	- Ex: intro-to-python.ipynb
+	- Ex: path/to/notebook.ipynb
+
+
+Link to the github repo should be the main page of the repo that is being shared, note that it does not end in .git, it is only the URL. 
+
+The subpath is optional. Adding the subpath will automatically open the notebook when someone clicks the link, otherwise it opens up to the copied directory in DataHub. Note, whitespace is not allowed, if you add a subpath with whitespace the site will try to replace the whitespace with dashes (-), and hope that fixes it, but it is not guaranteed. It is recommended to rename files to remove any whitespaces prior to creating the DataHub Link.
+
+By the nature of DataHub, clicking the link will not update a repo that has had any changes and the repo cannot be copied into a user's DataHub directory if they have another folder already by the same name. To be able to copy over the repo the user will have to rename or remove the folder that shares the name with the repo. DataHub links should only be shared once the repo is finalized and ready to share. 
+
+
+Submit an issue if you find any bugs or requests, or tweet me.
+
+
+# To-Do:
+1. Improve badge logo 💤
+2. Make site pretty 💤
+
+### Attributions
+Bear icon from Mozilla, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
