@@ -1,0 +1,62 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: DDD5C7;
+}
+
+.Header {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+.link-creator {
+    margin: auto;
+    width: 60%;
+}
+
+.user-input {
+    background-color: B9D3B6;
+    padding: 1em;
+}
+
+#repo {
+    margin: auto;
+    width: 100%;
+}
+#repo-desc {
+    font-weight: 700;
+    margin: auto;
+    width: 60%;
+}
+
+#file {
+    margin: auto;
+    width: 100%;
+}
+
+#file-desc {
+    font-weight: 700;
+    margin: auto;
+    width: 60%;
+}
+
+.user-output1 {
+    background-color: B9D3B6;
+    padding: 1em;
+}
+
+#dh-url {
+    border:2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.user-output2 {
+    background-color: B9D3B6;
+    padding: 1em;
+}
+
+#markdown {
+    border:2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}

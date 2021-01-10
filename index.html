@@ -2,18 +2,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="Header">
         <h1>DataHub Link Creator</h1>
         <h3>By <a href="https://carlos.soy" target="_blank">Carlos Eduardo Ortega</a></h3>
+        <h3><a href="https://github.com/SoyCarlos/dh-link-creator">Github Repo</a></h3>
     </div>
     <div class="link-creator">
         <div class="user-input">
-            <a>Link to Github Repo Here</a>
+            <a id="repo-desc">Link to Github Repo Here</a>
             <input type="text" id="repo" name="repo" placeholder="github.com/your-repo-here" onchange="update_url()">
-            <a>Subpath to a notebook file (optional)</a>
+            <a id="file-desc">Subpath to a notebook file (optional)</a>
             <input type="text" id="file" name="file" placeholder="path/to/notebook.ipynb" onchange="add_subpath()">
         </div>
         <div class="user-output1">
@@ -27,7 +31,7 @@
                     }
                     else {
                         document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url;
-                        markdown_repo_only(document.getElementById("dh-url").innerHTML);
+                        markdown_update(document.getElementById("dh-url").innerHTML);
                     }
                 }
             </script>
@@ -35,8 +39,13 @@
                 function add_subpath() {
                     var repo_url = document.getElementById('repo').value;
                     var file_path = document.getElementById('file').value;
+                    var file_path = file_path.replace(/\s/g, "-");
                     if (repo_url != "" && file_path != "") {
                         document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url + "&subpath=" + file_path;
+                        markdown_update(document.getElementById("dh-url").innerHTML)
+                    }
+                    if (file_path == "") {
+                        update_url();
                     }
                 }
             </script>
@@ -46,7 +55,7 @@
             <img src="assets/badge_logo.svg" width="10%">
             <p id="markdown">Fill in the fields to see the markdown badge snippet.</p>
             <script>
-                function markdown_repo_only(url) {
+                function markdown_update(url, subpath) {
                     document.getElementById("markdown").innerHTML = "[![DataHub](https://i.ibb.co/s5V7XbX/badge-logo.png)](" + url + ")";
                 }
             </script>
