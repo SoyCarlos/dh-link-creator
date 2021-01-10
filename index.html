@@ -39,7 +39,6 @@
                 function add_subpath() {
                     var repo_url = document.getElementById('repo').value;
                     var file_path = document.getElementById('file').value;
-                    var file_path = file_path.replace(/\s/g, "-");
                     if (repo_url != "" && file_path != "") {
                         document.getElementById("dh-url").innerHTML = "http://datahub.berkeley.edu/hub/user-redirect/git-sync?repo=" + repo_url + "&subpath=" + file_path;
                         markdown_update(document.getElementById("dh-url").innerHTML)
