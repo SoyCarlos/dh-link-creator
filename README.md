@@ -11,7 +11,7 @@ Example Link/Badge (Will open UC Berkeley DataHub in this tab):
 
 [![DSUS Consulting](https://i.ibb.co/s5V7XbX/badge-logo.png)](https://data.berkeley.edu/consulting/)
 
-I am Carlos Eduardo Ortega, current senior at UC Berkeley entering my final semester. I am also a a Peer Consultant under CDSS DSUS. We host a good amount of workshops, and as such, end up making a good amount of DataHub links. This will hopefully make it a bit easier and not require us to remember the exact format.
+I am Carlos Eduardo Ortega, current senior at UC Berkeley entering my final semester. I am also a a Peer Consultant under CDSS DSUS (Click the badge under WHO & WHY to learn more). We host a good amount of workshops, and as such, end up making a good amount of DataHub links. This will hopefully make it a bit easier and not require us to remember the exact format.
 
 
 # HOW?
