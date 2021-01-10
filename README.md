@@ -13,5 +13,5 @@ SVG Link: https://svgshare.com/i/Sys.svg
 1. Make datahub link ✅
 2. Add subpath option ✅
 3. Add markdown to include badge logo ✅
-4. improve badge logo
+4. improve badge logo 
 5. make site pretty
