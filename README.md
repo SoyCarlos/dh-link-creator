@@ -37,6 +37,7 @@ Submit an issue if you find any bugs or have any requests, or tweet me.
 # To-Do:
 1. Improve badge logo 💤
 2. Make site pretty 💤
+3. FIX: Does not work with repos in orgs, must https://datahub.berkeley.edu/hub/user-redirect/interact?account=[acct here]&repo=[repo here]&branch=[branch here]&subpath=[subpath here] 
 
 ### Attributions
 Bear icon from Mozilla, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
