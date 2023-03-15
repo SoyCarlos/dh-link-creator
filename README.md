@@ -1,4 +1,5 @@
 # dh-link-creator
+![DH Link Creator Website Preview](dh-link-creator-preview.png)
 
 # WHAT?
 dh-link-creator is a simple, single-page app completely built with HTML, CSS, and JS to create shareable links that will make a copy of an individual's repo to the user's UC Berkeley DataHub instance.
